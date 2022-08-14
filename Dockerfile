@@ -1,5 +1,5 @@
 # linux/arm64/v8
-FROM golang:1.19.0-alpine@sha256:24bd9ec1f81942951499f9ebe5d7c95ea42355a0c65a8593a0f73d93a26da223
+FROM golang:1.19.0-alpine
 WORKDIR /usr/src/app
 COPY . .
 RUN go build -v -o /usr/local/bin/app ./main.go
